@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crm.mapper.Customer.CustomerMapper">
+
+    <!--更新客户信息-->
+    <update id="updateCustomer" parameterType="Customer">
+        update tb_customer SET name=#{name} ,
+        telephone=#{telephone},
+        address=#{address},
+        remark=#{remark}
+       <where>
+           id=${id}
+       </where>
+    </update>
+    <!--通过ID查询用户-->
+    <select id="findByID" parameterType="Integer" resultType="Customer">
+      select * from tb_customer
+      <where>
+         id=#{id}
+      </where>
+    </select>
+    <!--删除用户数据-->
+    <delete id="deleteByID" parameterType="Integer">
+       delete from tb_customer
+       <where>
+          id = #{id}
+       </where>
+    </delete>
+    <!--添加客户的sql代码-->
+    <insert id="CustomerAdd" parameterType="Customer" >
+        insert into tb_customer value
+        (null,
+        #{name},
+        #{telephone},
+        #{address},
+        #{remark})
+    </insert>
+
+    <!-- 分页查询的手动映射-->
+    <resultMap id="BaseResultMap" type="Customer">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="telephone" property="telephone" jdbcType="VARCHAR"/>
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="remark" property="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!-- 分页查询的sql代码-->
+    <select id="findByPage" parameterType="Customer" resultMap="BaseResultMap">
+       SELECT * From tb_customer
+       <where>
+           <if test="name !=null">
+               name like CONCAT('%',#{name},'%')
+           </if>
+           <if test="telephone !=null">
+               and  telephone like CONCAT('%',#{telephone},'%')
+           </if>
+       </where>
+    </select>
+</mapper>
