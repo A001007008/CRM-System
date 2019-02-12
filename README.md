@@ -30,7 +30,7 @@
 
 * 文件的目录如下：
 
-   <img src="/img/src.png" height="30" width="19" > 
+   <img src="/img/src.png"  >  
 
 * main项目下是项目的主要实现代码，resources用于存放配置的xml。
 
@@ -118,7 +118,7 @@
 
     *  ```
       PageInfo info =new PageInfo(查询的数据)
-       ```
+      ```
 
     * 返回PageInfo或对需要的数据再封装。(程序里面没有用到PageInfo，使用的是自己封装的Page对象，有兴趣的可以试一试)
 
