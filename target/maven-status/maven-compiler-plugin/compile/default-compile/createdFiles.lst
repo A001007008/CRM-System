@@ -1,0 +1,12 @@
+crm\pojo\PageBean\PageBean.class
+crm\service\UserService\UserService.class
+crm\service\UserService\UserServiceImp.class
+crm\mapper\UserMapper\UserMapper.class
+crm\service\CustomerService\CustomerService.class
+crm\mapper\Customer\CustomerMapper.class
+crm\controller\UserController\UserController.class
+crm\controller\UserController\LoginHandlerInterceptorAdapter.class
+crm\pojo\User\User.class
+crm\service\CustomerService\CustomerServiceImpl.class
+crm\controller\CustomerController\CustomerController.class
+crm\pojo\Customer\Customer.class

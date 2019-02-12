@@ -1,0 +1,44 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< com.hs.crm:crm >---------------------------
+[INFO] Building crm 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ crm ---
+[INFO] com.hs.crm:crm:war:1.0-SNAPSHOT
+[INFO] +- mysql:mysql-connector-java:jar:8.0.11:compile
+[INFO] |  \- com.google.protobuf:protobuf-java:jar:2.6.0:runtime
+[INFO] +- junit:junit:jar:4.9:compile
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:compile
+[INFO] +- c3p0:c3p0:jar:0.9.1.2:compile
+[INFO] +- org.springframework:spring-jdbc:jar:4.2.4.RELEASE:compile
+[INFO] |  +- org.springframework:spring-beans:jar:4.2.4.RELEASE:compile
+[INFO] |  +- org.springframework:spring-core:jar:4.2.4.RELEASE:compile
+[INFO] |  |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] |  \- org.springframework:spring-tx:jar:4.2.4.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:4.2.4.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:4.2.4.RELEASE:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.2.4.RELEASE:compile
+[INFO] +- org.springframework:spring-web:jar:4.2.4.RELEASE:compile
+[INFO] +- org.springframework:spring-webmvc:jar:4.2.4.RELEASE:compile
+[INFO] +- org.springframework:spring-test:jar:4.2.4.RELEASE:compile
+[INFO] +- org.mybatis:mybatis:jar:3.2.8:compile
+[INFO] +- org.mybatis:mybatis-spring:jar:1.2.2:compile
+[INFO] +- com.github.pagehelper:pagehelper:jar:4.0.0:compile
+[INFO] |  \- com.github.jsqlparser:jsqlparser:jar:0.9.1:compile
+[INFO] +- javax.servlet:javax.servlet-api:jar:3.0.1:compile
+[INFO] +- javax.servlet:jstl:jar:1.2:compile
+[INFO] +- com.alibaba:fastjson:jar:1.2.47:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.8.11:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-core:jar:2.8.10:compile
+[INFO] \- ch.qos.logback:logback-classic:jar:1.1.1:compile
+[INFO]    +- ch.qos.logback:logback-core:jar:1.1.1:compile
+[INFO]    \- org.slf4j:slf4j-api:jar:1.7.6:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.120 s
+[INFO] Finished at: 2019-02-12T19:44:05+08:00
+[INFO] ------------------------------------------------------------------------

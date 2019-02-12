@@ -2,6 +2,7 @@ package crm.service.CustomerService;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import crm.mapper.Customer.CustomerMapper;
 import crm.pojo.Customer.Customer;
 import crm.pojo.PageBean.PageBean;
